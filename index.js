@@ -49,7 +49,6 @@ app.get("/api/blog-stats", async (req, res, next) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
-
 app.get('/api/blog-search', async (req, res, next) => {
     try {
         const blogs=await getBlogs();
